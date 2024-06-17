@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styleform.css">
+	<title>Forma</title>
+</head>
+
+<body>
+	<div class="form">
+<form action="/" method="post">
+
+	<fieldset class="fieldset">
+		<legend class="h1">Личные данные</legend>
+
+		<div class="form-group">
+			
+			<label for="male">Муж</label>
+			<input type="radio" name="choose_male" id="male">
+            
+            <label for="female">Жен</label>
+			<input type="radio" name="choose_male" id="female">
+
+		</div>
+		
+	<div class="form-group">
+		<input class="form-input" type="text" name="name" placeholder="Ваше имя">
+	</div>
+
+	<div class="form-group">
+		<input class="form-input" type="emai" name="email" placeholder="Ваш email">
+	</div>
+
+
+    <div class="form-group">
+		<input class="form-input" type="tel" name="tel" placeholder="Ваш номер телефона">
+	</div>
+
+	 <div class="form-group">
+		<input class="form-input" type="text" name="adress" placeholder="Адрес проживания">
+	</div>
+
+	<div class="form-group">
+		<textarea class="form-textarea" type="text" name="textarea" placeholder="Информация о Вас"></textarea>
+	</div>
+	
+	</fieldset>
+
+
+    <fieldset class="fieldset">
+    	<legend class="h1">Безопасность</legend>
+    	
+		<div class="form-group">
+		<input class="form-input" type="password" name="password" placeholder="Старый пароль">
+	</div>
+
+	<div class="form-group">
+		<input class="form-input" type="password" name="password" placeholder="Новый пароль">
+	</div>
+
+	<div class="form-group">
+		<input class="form-input" type="password" name="password" placeholder="Новый пароль ещё раз">
+	</div>
+
+	<div class="form-group">
+                <select class="form-select" name="question">
+                    <option>Секретный вопрос</option> 
+                    <option>Вопрос 1</option>
+                    <option>Вопрос 2</option>
+                </select>
+            </div>
+
+     <div class="form-group">
+		<input class="form-input" type="text" name="answer" placeholder="Ответ на секретный вопрос">
+	</div>
+
+    </fieldset>
+	
+	<fieldset class="fieldset">
+		<legend class="h1">Оповещения</legend>
+
+	<div class="form-group-sm">
+                <input type="checkbox" id="notify_email">
+                <label for="notify_email">Получать новости на e-mail</label>
+            </div>
+
+            <div class="form-group-sm">
+                <input type="checkbox" id="notify_discounts">
+                <label for="notify_discounts">Получать информацию о скидках</label>
+            </div>
+	</fieldset>
+
+	<div>
+		<button class="bt-submit" type="submit">Сохранить</button>
+		<button class="bt-reset" type="reset">Отменить и очистить</button>
+	</div>
+
+	</div>
+
+</body>
+</html>
